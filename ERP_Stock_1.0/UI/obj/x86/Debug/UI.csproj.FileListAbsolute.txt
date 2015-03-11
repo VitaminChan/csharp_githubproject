@@ -1,0 +1,9 @@
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\UI\bin\Debug\UI.exe
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\UI\bin\Debug\UI.pdb
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\UI\obj\x86\Debug\UI.Properties.Resources.resources
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\UI\obj\x86\Debug\UI.csproj.GenerateResource.Cache
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\UI\obj\x86\Debug\UI.exe
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\UI\obj\x86\Debug\UI.pdb
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\UI\obj\x86\Debug\UI.Form_StartUp.frmLogin.resources
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\UI\obj\x86\Debug\UI.Form_Main.frmMain.resources
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\UI\obj\x86\Debug\UI.Menu_BaseInfo.Form_Users.UsersList.resources

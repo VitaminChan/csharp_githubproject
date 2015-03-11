@@ -1,0 +1,4 @@
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\bin\Debug\BLL.dll
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\bin\Debug\BLL.pdb
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\obj\Debug\BLL.dll
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\obj\Debug\BLL.pdb
