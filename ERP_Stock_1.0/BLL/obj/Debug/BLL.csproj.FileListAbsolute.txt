@@ -2,3 +2,10 @@ E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\bin\Debug\BLL.dll
 E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\bin\Debug\BLL.pdb
 E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\obj\Debug\BLL.dll
 E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\obj\Debug\BLL.pdb
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\bin\Debug\DAL.dll
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\bin\Debug\Model.dll
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\bin\Debug\Tools.dll
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\bin\Debug\DAL.pdb
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\bin\Debug\Model.pdb
+E:\deve_csharp\csharp_localproject\ERP_Stock_1.0\BLL\bin\Debug\Tools.pdb

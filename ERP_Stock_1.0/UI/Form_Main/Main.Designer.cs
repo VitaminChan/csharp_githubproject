@@ -28,7 +28,7 @@ namespace UI.Form_Main
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStripMain = new System.Windows.Forms.MenuStrip();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.基本資料ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.用戶資料ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.客戶資料ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,27 +54,27 @@ namespace UI.Form_Main
             this.角色及權限管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.superTabItem1 = new DevComponents.DotNetBar.SuperTabItem();
             this.NavTabControl = new DevComponents.DotNetBar.SuperTabControl();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.menuStripMain.SuspendLayout();
+            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NavTabControl)).BeginInit();
             this.NavTabControl.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStripMain
+            // menuStrip
             // 
-            this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.基本資料ToolStripMenuItem,
             this.進貨作業ToolStripMenuItem,
             this.銷售作業ToolStripMenuItem,
             this.月結報表ToolStripMenuItem,
             this.系統設置ToolStripMenuItem});
-            this.menuStripMain.Location = new System.Drawing.Point(0, 0);
-            this.menuStripMain.Name = "menuStripMain";
-            this.menuStripMain.Size = new System.Drawing.Size(772, 24);
-            this.menuStripMain.TabIndex = 0;
-            this.menuStripMain.Text = "menuStrip1";
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(772, 24);
+            this.menuStrip.TabIndex = 0;
+            this.menuStrip.Text = "menuStrip1";
             // 
             // 基本資料ToolStripMenuItem
             // 
@@ -275,23 +275,8 @@ namespace UI.Form_Main
             this.NavTabControl.TabIndex = 1;
             this.NavTabControl.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabItem2});
+            this.NavTabControl.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.VisualStudio2008Dock;
             this.NavTabControl.Text = "superTabControl1";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 532);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(772, 22);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // superTabItem2
-            // 
-            this.superTabItem2.AttachedControl = this.superTabControlPanel1;
-            this.superTabItem2.CloseButtonVisible = false;
-            this.superTabItem2.GlobalItem = false;
-            this.superTabItem2.Name = "superTabItem2";
-            this.superTabItem2.Text = "主頁";
             // 
             // superTabControlPanel1
             // 
@@ -302,11 +287,27 @@ namespace UI.Form_Main
             this.superTabControlPanel1.TabIndex = 0;
             this.superTabControlPanel1.TabItem = this.superTabItem2;
             // 
+            // superTabItem2
+            // 
+            this.superTabItem2.AttachedControl = this.superTabControlPanel1;
+            this.superTabItem2.CloseButtonVisible = false;
+            this.superTabItem2.GlobalItem = false;
+            this.superTabItem2.Name = "superTabItem2";
+            this.superTabItem2.Text = "主頁";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Location = new System.Drawing.Point(0, 532);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(772, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
             // frmMain
             // 
             this.ClientSize = new System.Drawing.Size(772, 554);
             this.Controls.Add(this.NavTabControl);
-            this.Controls.Add(this.menuStripMain);
+            this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.statusStrip1);
             this.DoubleBuffered = true;
             this.EnableGlass = false;
@@ -314,8 +315,8 @@ namespace UI.Form_Main
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.Load += new System.EventHandler(this.frmMain_Load);
-            this.menuStripMain.ResumeLayout(false);
-            this.menuStripMain.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NavTabControl)).EndInit();
             this.NavTabControl.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -325,7 +326,7 @@ namespace UI.Form_Main
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStripMain;
+        private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem 基本資料ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 客戶資料ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 供應商資料ToolStripMenuItem;

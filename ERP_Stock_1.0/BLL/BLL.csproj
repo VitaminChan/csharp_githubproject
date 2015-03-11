@@ -40,7 +40,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUsers\UsersModuleAuthorityBLL.cs" />
+    <Compile Include="AboutUsers\UsersRoleBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AboutUsers\UsersBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{A1D34814-3D87-4F36-BF85-1B6C7001A649}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{3851E1E2-5C37-4000-BA93-959A2F4CBC2D}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{F0516BD3-F48C-4367-8535-0A5762D1B6A9}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

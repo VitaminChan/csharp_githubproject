@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using DevComponents.DotNetBar;
 
+using UI.UILibHelper;
 namespace UI.Form_Main
 {
     public partial class frmMain : DevComponents.DotNetBar.OfficeForm
@@ -58,15 +59,54 @@ namespace UI.Form_Main
 
         private void ¥Î¤á¸ê®ÆToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Menu_BaseInfo.Form_Users.UsersList frmUsersList = new Menu_BaseInfo.Form_Users.UsersList();
+            Menu_BaseInfo.Form_Users.frmUsersList frmUsersList = new Menu_BaseInfo.Form_Users.frmUsersList();
             OpenForm(frmUsersList, sender.ToString());
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            Initialize_UI();
+            InitializeUI();
+            InitializeMenuSetting();
         }
-        public void Initialize_UI()
+
+        public void InitializeMenuSetting()
+        {
+            foreach (ToolStripMenuItem item in menuStrip.Items)
+            {
+                SystemMenu entity = new SystemMenu()
+                {
+                    IsMainMenu = true,
+                    ModuleName = item.Text,
+                    SubMenus = new List<SystemMenu>()
+                };
+
+                for(int index = 0; index < item.DropDownItems.Count; index++)
+                {
+                    ToolStripMenuItem subItem = item.DropDownItems[index] as ToolStripMenuItem;
+
+                    if (null != subItem)
+                    {
+                        //SetMainMenuAuthority();
+
+                        entity.SubMenus.Add(new SystemMenu() { IsMainMenu = false, ModuleName = subItem.Text });
+                    }
+                }
+
+                SaveMenuList(entity);
+            }
+        }
+
+        public void SetMainMenuAuthority(ToolStripMenuItem item, bool isRunEnabel)
+        {
+            item.Enabled = isRunEnabel;
+        }
+
+        public void SaveMenuList(SystemMenu entity)
+        {
+            SystemLibHelper.SetSystemMenu(entity);
+        }
+
+        public void InitializeUI()
         {
         }
 
